@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-02-19T08:17:02Z" product-name="pubmodule">
+		<header/>
+		<body>
+			<trans-unit id="tableHeader.weight">
+				<source>Weight</source>
+			</trans-unit>
+			<trans-unit id="tableHeader.preview">
+				<source>Preview</source>
+			</trans-unit>
+			<trans-unit id="tableHeader.frontview">
+				<source>Front view</source>
+			</trans-unit>
+			<trans-unit id="tableHeader.sideview">
+				<source>Side view</source>
+			</trans-unit>
+			<trans-unit id="tableHeader.72dpi">
+				<source>72dpi</source>
+			</trans-unit>
+			<trans-unit id="tableHeader.300dpi">
+				<source>300dpi</source>
+			</trans-unit>
+			<trans-unit id="section.logos">
+			  <source>Logos</source>
+			</trans-unit>
+			<trans-unit id="check.front72">
+			  <source>Front view 72dpi</source>
+			</trans-unit>
+			<trans-unit id="check.front300">
+			  <source>Front view 300dpi</source>
+			</trans-unit>
+			<trans-unit id="check.side72">
+			  <source>Side view 72dpi</source>
+			</trans-unit>
+			<trans-unit id="check.side300">
+			  <source>Side view 300dpi</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

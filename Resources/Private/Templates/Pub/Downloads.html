@@ -1,0 +1,70 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="content">
+  <article class="ProductDownload u-container u-marginBottom--r6 u-print-hide">
+    <div class="u-limitWidth-12 u-align-center u-marginBottom--r6" data-pub="container" data-pub-lang="{language}">
+      <header>
+        <h1 class="Base-h1 u-paddingTop--r4 u-marginBottom--r4">{settings.text.headline}</h1>
+        <div class="ProductDownload-hero-interactionContainer u-marginBottom--r2">
+          <h2 class="Base-h3">{settings.text.subHeadline}</h2>
+          <div class="Base-p Base-p--large">
+            <f:link.typolink parameter="{settings.text.certificateLink}" class="Base-iconLink-page js-sectionscroll">{settings.text.certificate}</f:link.typolink>
+          </div>
+        </div>
+      </header>
+      <div class="ProductDownload-formContainer Base-theme--dark u-marginBottom--r6">
+        <form class="ProductDownload-form" data-pub="filter-form">
+          <div class="Base-inputGroup--horizontal u-marginBottom--r2">
+            <input class="Base-input" name="productdownload[sword]" list="productDownloadList" type="text" placeholder="" data-pub="filter-input">
+            <datalist id="productDownloadList" data-pub="filter-list-data"></datalist>
+            <button class="Base-button Base-button--secondary" title="Ergebnis anzeigen" type="submit">Suchen</button>
+          </div>
+          <div class="ProductDownload-filterRow u-marginBottom--r2">
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter1" name="productdownloadfilter" value="koelln">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter1">Kölln</label>
+            </div>
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter2" name="productdownloadfilter" value="mazola">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter2">Mazola</label>
+            </div>
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter3" name="productdownloadfilter" value="biskin">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter3">Biskin</label>
+            </div>
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter4" name="productdownloadfilter" value="livio">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter4">Livio</label>
+            </div>
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter5" name="productdownloadfilter" value="palmin">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter5">Palmin</label>
+            </div>
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter6" name="productdownloadfilter" value="brecht">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter6">Becht's</label>
+            </div>
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter7" name="productdownloadfilter" value="edelweiss">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter7">Edelweiss</label>
+            </div>
+            <div class="ProductDownload-radio-group">
+              <input class="ProductDownload-radio" type="radio" id="productdownloadfilter8" name="productdownloadfilter" value="logo">
+              <label class="ProductDownload-radio-label" for="productdownloadfilter8">Logos</label>
+            </div>
+          </div>
+          <div>
+            <button class="Base-button Base-button--secondary u-marginBottom--0" type="reset">{settings.text.filterReset}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="u-limitWidth-5 u-align-center">
+      <p class="Base-formNotification">{settings.text.downloadLimit}</p>
+      <button class="Base-button Base-button--block Base-button--large" type="button" data-pub="btn-download">{settings.text.downloadButton}</button>
+    </div>
+  </article>
+  <v:asset.script path="EXT:pubmodule/Resources/Public/Javascript/Modules/jquery.pub.js" name="pub" movable="1" standalone="1" external="0" rewrite="0" />
+</f:section>
+</html>

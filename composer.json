@@ -1,0 +1,18 @@
+{
+    "name": "koelln/pubmodule",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [],
+    "require": {
+        "typo3/cms-core": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Koelln\\Pubmodule\\": "Classes"
+        }
+    },
+    "replace": {
+        "koelln/pubmodule": "self.version",
+        "typo3-ter/pubmodule": "self.version"
+    }
+}

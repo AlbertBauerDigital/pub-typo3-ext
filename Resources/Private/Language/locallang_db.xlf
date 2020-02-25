@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-02-19T08:17:59Z" product-name="pubmodule">
+		<header/>
+		<body>
+			<trans-unit id="tx_pubmodule_pub.name">
+				<source>Produkt und Bilddatenbank</source>
+			</trans-unit>
+			<trans-unit id="tx_pubmodule_pub.description">
+				<source></source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

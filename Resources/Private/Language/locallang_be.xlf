@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2020-02-19T08:17:02Z" product-name="pubmodule">
+		<header/>
+		<body>
+			<trans-unit id="settings.text.headline">
+				<source>Überschrift</source>
+			</trans-unit>
+			<trans-unit id="settings.text.subHeadline">
+				<source>Unter-Überschrift</source>
+			</trans-unit>
+			<trans-unit id="settings.text.certificate">
+				<source>Zertifikate Link Text</source>
+			</trans-unit>
+			<trans-unit id="settings.text.certificateLink">
+				<source>Zertifikate Link</source>
+			</trans-unit>
+			<trans-unit id="settings.text.searchButton">
+				<source>Suchen Button Text</source>
+			</trans-unit>
+			<trans-unit id="settings.text.filterReset">
+				<source>Zurücksetzen Button Text</source>
+			</trans-unit>
+			<trans-unit id="settings.text.downloadLimit">
+				<source>Text Download Limit</source>
+			</trans-unit>
+			<trans-unit id="settings.text.downloadButton">
+				<source>Download Button Text</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
