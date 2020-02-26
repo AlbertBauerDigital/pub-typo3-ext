@@ -171,8 +171,10 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   var renderList = function renderList(node) {
     var result = [];
     $.each(node.items, function (ii, i) {
+      var prefix = i.ano ? i.ano + ' - ' : '';
+      var suffix = i.size ? ' - ' + i.size : '';
       result.push(h('option', {
-        value: i.name + ' - ' + i.size,
+        value: prefix + i.name + suffix,
         'data-pub-id': i.id
       }));
     });
@@ -272,12 +274,13 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
       };
     };
 
-    var mapItem = function mapItem(id, name, size, sizeUnit, images) {
+    var mapItem = function mapItem(id, name, size, sizeUnit, ano, images) {
       return {
         id: id,
         name: name,
-        size: size + ' ' + sizeUnit,
-        sizeF: size + '&nbsp;' + sizeUnit,
+        size: (size + ' ' + sizeUnit).trim(),
+        sizeF: (size + '&nbsp;' + sizeUnit).trim(),
+        ano: ano,
         images: images
       };
     };
@@ -291,7 +294,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
       };
       $.each(c.products, function (ip, p) {
         $.each(p.variants, function (iv, v) {
-          category.items.push(mapItem(v.id, p.name, v.packageSizeValue, v.packageSizeUnit, mapImg(v.images, 'front', 'side')));
+          category.items.push(mapItem(v.id, p.name, v.packageSizeValue, v.packageSizeUnit, v.articleNumber, mapImg(v.images, 'front', 'side')));
         });
       });
       result.push(category);
@@ -302,7 +305,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
       items: []
     };
     $.each(logos, function (il, l) {
-      logosCategory.items.push(mapItem(l.id, l.name, '', '', mapImg(l.variants[0].images, 'default', null)));
+      logosCategory.items.push(mapItem(l.id, l.name, '', '', '', mapImg(l.variants[0].images, 'default', null)));
     });
     result.push(logosCategory);
     return result;

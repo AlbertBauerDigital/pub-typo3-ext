@@ -112,7 +112,9 @@
   const renderList = node => {
     let result = [];
     $.each(node.items, (ii, i) => {
-      result.push(h('option', {value: i.name + ' - ' + i.size, 'data-pub-id': i.id}));
+      let prefix = i.ano ? (i.ano + ' - ') : '';
+      let suffix = i.size ? (' - ' + i.size) : '';
+      result.push(h('option', {value: prefix + i.name + suffix, 'data-pub-id': i.id}));
     });
     return result;
   };
@@ -174,22 +176,22 @@
         side300: hasImg(images, keySide, TYPE_EPS),
       }
     };
-    const mapItem = (id, name, size, sizeUnit, images) => {
-      return {id, name, size: size + ' ' + sizeUnit, sizeF: size + '&nbsp;' + sizeUnit, images};
+    const mapItem = (id, name, size, sizeUnit, ano, images) => {
+      return {id, name, size: (size + ' ' + sizeUnit).trim(), sizeF: (size + '&nbsp;' + sizeUnit).trim(), ano, images};
     };
     const result = [];
     $.each(categories, (ic, c) => {
       const category = {id: c.id, name: c.name, items: []};
       $.each(c.products, (ip, p) => {
         $.each(p.variants, (iv, v) => {
-          category.items.push(mapItem(v.id, p.name, v.packageSizeValue, v.packageSizeUnit, mapImg(v.images, 'front', 'side')));
+          category.items.push(mapItem(v.id, p.name, v.packageSizeValue, v.packageSizeUnit, v.articleNumber, mapImg(v.images, 'front', 'side')));
         })
       });
       result.push(category);
     });
     const logosCategory = {id: LOGOS_ID, name: locale.t('section.logo'), items: []};
     $.each(logos, (il, l) => {
-      logosCategory.items.push(mapItem(l.id, l.name, '', '', mapImg(l.variants[0].images, 'default', null)));
+      logosCategory.items.push(mapItem(l.id, l.name, '', '', '', mapImg(l.variants[0].images, 'default', null)));
     });
     result.push(logosCategory);
     return result;
