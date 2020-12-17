@@ -19,6 +19,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   var CAT_ID_MAP = {
     koelln: [1, 2, 3, 4, 5, 6, 7, 8, 21],
     mazola: [9],
+    mazola_at: [22],
     biskin: [12],
     livio: [10],
     palmin: [13],
