@@ -135,7 +135,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     var img = hasSide ? node.images.side72.path : node.images.front72.path;
 
     if (!hasSide && !hasFront) {
-      return;
+      return h('span');
     }
 
     return h('a', {

@@ -92,7 +92,7 @@
     const hasFront = !!node.images.front72;
     const img = hasSide ? node.images.side72.path : node.images.front72.path;
     if (!hasSide && !hasFront) {
-      return; // No Valid image
+      return h('span'); // No Valid image
     }
     return h('a', {class: 'ProductDownload-previewLink js-lightbox', href: img, title: node.name}, [icon('#symbol-preview')]);
   };
