@@ -17,7 +17,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   var PUB_API_BATCH = '/api/meta/download/batch';
   var LOGOS_ID = 9999999;
   var CAT_ID_MAP = {
-    koelln: [1, 2, 3, 4, 5, 6, 7, 8, 21],
+    koelln: [1, 2, 3, 4, 5, 6, 7, 8, 21, 23],
     mazola: [9],
     mazola_at: [22],
     biskin: [12],
