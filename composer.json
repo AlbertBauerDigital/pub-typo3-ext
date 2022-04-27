@@ -1,7 +1,7 @@
 {
     "name": "koelln/pubmodule",
     "type": "typo3-cms-extension",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "",
     "authors": [],
     "require": {
