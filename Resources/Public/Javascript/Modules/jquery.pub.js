@@ -25,6 +25,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     palmin: [13],
     brecht: [11],
     edelweiss: [15],
+    heimatoel: [24],
     logo: [LOGOS_ID]
   };
   var $container = $('[data-pub="container"]');
