@@ -24,7 +24,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     livio: [10],
     palmin: [13],
     brecht: [11],
-    edelweiss: [15],
     heimatoel: [24],
     logo: [LOGOS_ID]
   };
