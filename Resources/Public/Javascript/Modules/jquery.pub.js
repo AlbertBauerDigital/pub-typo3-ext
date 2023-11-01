@@ -24,7 +24,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
     livio: [10],
     palmin: [13],
     brecht: [11],
-    heimatoel: [24],
     logo: [LOGOS_ID]
   };
   var $container = $('[data-pub="container"]');
