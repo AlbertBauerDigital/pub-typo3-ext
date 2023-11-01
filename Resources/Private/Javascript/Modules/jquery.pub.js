@@ -16,7 +16,6 @@
     livio: [10],
     palmin: [13],
     brecht: [11],
-    heimatoel: [24],
     logo: [LOGOS_ID],
   };
 
